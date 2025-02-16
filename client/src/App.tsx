@@ -1,11 +1,11 @@
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Footer from './components/Footer';
 import ContactForm from './pages/ContactForm';
 
-function App() {
+const App: React.FC = () => {
   const homeRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
