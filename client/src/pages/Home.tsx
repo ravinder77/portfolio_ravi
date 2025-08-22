@@ -36,7 +36,7 @@ const Home: React.FC = () => {
             type='button'
             className='mt-6 bg-primaryYellow text-primaryBlack   px-6 py-2 capitalize rounded-3xl  font-medium'
           >
-            Download CV
+            Download Resume
           </button>
         </div>
       </div>

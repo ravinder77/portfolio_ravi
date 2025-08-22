@@ -77,6 +77,7 @@ const ContactForm: React.FC = () => {
     <section>
       <h1 className='text-4xl font-bold text-center mb-16'>Contact</h1>
       <div  className='w-full flex flex-col sm:flex-row gap-4 p-6 mx-auto'>
+
         <div className='w-1/2 '>
           <h1 className='text-4xl font-medium leading-tight'>
             Let's Talk. <br />
