@@ -44,8 +44,6 @@ async function hireMe(req, res) {
           })
       } 
 
-
-
           const newSubmission = await User.create({
               name,
               email,
@@ -53,9 +51,7 @@ async function hireMe(req, res) {
               companyName: companyName || 'N/A',
               message
           });
-      
-         
-      
+
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         host: 'smtp.gmail.com',
@@ -67,13 +63,6 @@ async function hireMe(req, res) {
       },
     });
 
-
-    
-
-
-
-
-
  // email to admin
     const adminMailOptions = {
       from: email,
@@ -81,7 +70,6 @@ async function hireMe(req, res) {
       subject: 'New form submission',
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\nCompany Name: ${companyName || 'N/A'}\nMessage: ${message}`,
     };
-
 
     // confirmation email to user
     const confirmationMailOptions = {
@@ -102,7 +90,7 @@ async function hireMe(req, res) {
       Message: ${message}
 
       Best regards,
-      Ravinder
+      Ravinder Singh
       `,
   };
       
